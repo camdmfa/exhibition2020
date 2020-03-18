@@ -2,3 +2,14 @@ body {
   color: red;
   background: pink;
 }
+
+ul.nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.nav li {
+  margin: 0 2em 0 0;
+  display: inline-block;
+}
