@@ -1,0 +1,13 @@
+{% include header.html %}
+
+<h1>{{ title }}</h1>
+
+{{ content }}
+
+<ul>
+  {% for project in site.projects %}
+    <h2><a href="{{ project.url }}">{{ project.designer }}</a></h2>
+  {% endfor %}
+</ul>
+
+{% include footer.html %}
