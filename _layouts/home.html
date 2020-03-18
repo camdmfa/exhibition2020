@@ -4,16 +4,17 @@
 
 {{ content }}
 
+<h4>Posts</h4>
 <ul>
   {% for post in site.posts %}
-    <h2><a href="{{ site.url }}{{ post.path }}">{{ post.title }}</a></h2>
+    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
   {% endfor %}
 </ul>
 
-
+<h4>Projects</h4>
 <ul>
   {% for project in site.projects %}
-    <h2><a href="{{ site.url }}{{ project.path }}">{{ project.designer }}</a></h2>
+    <h2><a href="{{ site.baseurl }}{{ project.url }}">{{ project.designer }}</a></h2>
   {% endfor %}
 </ul>
 
