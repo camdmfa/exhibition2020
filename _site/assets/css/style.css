@@ -1,15 +1,222 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-  color: red;
-  background: pink;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: black;
 }
 
-ul.nav {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.footer {
+	text-align: center;
+	color: black;
+	background-color: white;
 }
 
-ul.nav li {
-  margin: 0 2em 0 0;
-  display: inline-block;
+
+
+/*utilty-------------------------------------------------*/
+
+.red,
+.red * {
+	color: #e62044 !important;
 }
+
+.inverse {
+	color: white;
+	background: black;
+}
+
+
+
+/*navbar-------------------------------------------------*/
+
+.navbar {
+	box-shadow: 0 2px 5px -2px rgba(0,0,0,0.3)
+}
+
+a.navbar-item:hover {
+	color: white;
+	background: #e62044;
+}
+
+
+/*base typography----------------------------------------*/
+
+h1 {
+	font-weight: bold;
+	font-size: 2.625;
+	line-height: 1.125em;
+}
+
+h2 {
+	margin-bottom: 3rem;
+	font-size: 1.875;
+	line-height: 1.1em;
+}
+
+h3 {
+	margin-bottom: 1.5rem;
+	font-size: 1.25em;
+	line-height: 1.2em;
+}
+
+h4 {
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+h1.title {
+	font-weight: bold;
+	font-size: 2.625;
+	line-height: 1.125em;
+}
+
+h2.subtitle {
+	margin-bottom: 3rem;
+	font-weight: normal;
+	font-size: 1.875;
+	line-height: 1.1em;
+}
+
+p {
+	margin-bottom: 1.5rem;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.caption {
+	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 0.75em;
+	line-height: 1.333em;
+}
+
+a {
+	color: black;
+}
+
+.content a {
+	text-decoration: underline;
+}
+
+a:hover {
+	color: #e62044;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+
+/*flow layout--------------------------------------------*/
+
+.flow {
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+}
+
+.flow > [class*="flow"] {
+	position: relative;
+	margin-bottom: 1em;
+	padding: 0;
+	width: 100%;
+}
+
+.flow > [class*="flow"] *:first-child {
+	margin-top: 0;
+}
+
+@media screen and (min-width: 769px) {
+	.flow > [class*="flow"] {
+		padding: 0.5em 1.5em;
+	}
+	.flow > .flow-half {width: 50%;}
+	.flow > .flow-push {margin-left: 50%;width: 50%;}
+	.flow >	.flow-full {width: 100%;}
+}
+
+@media screen and (min-width: 769px) {
+	.flow .project-meta {order: +1;}
+}
+
+
+
+/*project promos-----------------------------------------*/
+
+.flow.project-list {
+	padding: 0;
+}
+
+@media screen and (min-width: 1016px) {
+	.project-list {
+		width: 62rem;
+	}
+	.flow > .flow-project { /*thirds layout*/
+		margin-left: 0;
+		margin-bottom: 0;
+		padding: 0;
+		width: 33.33%;
+	}
+	.project-inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	a.project {
+		padding-bottom: 75%;
+	}
+	a.project:hover p {
+		display: none;
+	}
+	a.project:hover .project-inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: auto;
+		padding: 0.5em;
+	}	
+	.flow-project:nth-child(3) .project,
+	.flow-project:nth-child(4) .project,
+	.flow-project:nth-child(8) .project {
+		color: white;
+		background: black;
+	}
+}
+
+.project {
+	color: black;
+	background: white;
+	padding-bottom: 50%;
+}
+
+.project-inverse {
+	color: white;
+	background: black;
+}
+
+a.project {
+	display: block;
+	position: relative;
+/*	outline: 1px solid rgba(0,0,0,0.2);*/
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.project-inner {
+	padding: 0.5rem;
+	background-color: inherit;	
+}
+
+

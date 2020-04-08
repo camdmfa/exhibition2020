@@ -90,12 +90,17 @@ p {
 
 .caption {
 	margin-top: 0.5rem;
+	margin-bottom: 1.5rem;
 	font-size: 0.75em;
 	line-height: 1.333em;
 }
 
 a {
 	color: black;
+}
+
+.content a {
+	text-decoration: underline;
 }
 
 a:hover {
@@ -136,6 +141,10 @@ img {
 	.flow > .flow-half {width: 50%;}
 	.flow > .flow-push {margin-left: 50%;width: 50%;}
 	.flow >	.flow-full {width: 100%;}
+}
+
+@media screen and (min-width: 769px) {
+	.flow .project-meta {order: +1;}
 }
 
 

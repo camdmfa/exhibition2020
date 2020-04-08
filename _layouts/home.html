@@ -1,21 +1,34 @@
+<!--home layout-->
 {% include header.html %}
-
-<h1>{{ page.title }}</h1>
-
-{{ content }}
-
-<h4>Posts</h4>
-<ul>
-  {% for post in site.posts %}
-    <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-  {% endfor %}
-</ul>
-
-<h4>Projects</h4>
-<ul>
-  {% for project in site.projects %}
-    <h2><a href="{{ site.baseurl }}{{ project.url }}">{{ project.designer }}</a></h2>
-  {% endfor %}
-</ul>
-
+<!--hero image-->
+<section>
+	<img src="../../assets/images/hero.svg" alt="UNFOLDING: 2020 MFA Thesis Show">
+</section>
+<!--intro text-->
+<section class="hero inverse">
+	<div class="hero-body">
+		<div class="container" style="max-width: 36em;">
+		{{ content }}
+		</div>
+	</div>
+</section>
+<!--project list-->
+<section class="hero" style="margin: 4em 0;">
+	<div class="hero-body">
+		<div class="flow project-list">
+		
+		{% for project in site.projects %}
+			<div class="flow-project">
+				<a href="{{ site.baseurl }}{{ project.url }}" class="project" style="background-image: url(assets/images/{{ project.heroimage }})">
+					<div class="project-inner">
+						<p>{{ project.program }}</p>
+						<h3>{{ project.title }}</h3>
+						<p>{{ project.subtitle }}</p>
+					</div>
+				</a>			
+			</div>
+		{% endfor %}
+			
+	</div>		
+</section>
 {% include footer.html %}

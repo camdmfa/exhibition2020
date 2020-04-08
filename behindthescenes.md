@@ -1,5 +1,5 @@
 ---
-title:  "About"
+title:  "Behind the Scenes"
 layout: default
 ---
 
