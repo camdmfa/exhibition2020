@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+footer {
+	text-align: center;
+}
+
+
+/*base typography----------------------------------------*/
+
+h1 {
+	font-weight: bold;
+	font-size: 2.625;
+	line-height: 1.125em;
+}
+
+h2 {
+	margin-bottom: 3rem;
+	font-size: 1.875;
+	line-height: 1.1em;
+}
+
+h3 {
+	margin-bottom: 1.5rem;
+	font-size: 1.25em;
+	line-height: 1.2em;
+}
+
+h4 {
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 2.625;
+	line-height: 1.125em;
+}
+
+.subtitle {
+	margin-bottom: 3rem;
+	font-weight: normal;
+	font-size: 1.875;
+	line-height: 1.1em;
+}
+
+p {
+	margin-bottom: 1.5rem;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.caption {
+	font-size: 0.75em;
+	line-height: 1.333em;
+}
+
+
+
+/*flow layout--------------------------------------------*/
+
+.flow {
+	margin: 0 auto;
+	padding: 0.5em;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1200px;
+}
+
+.flow > [class*="flow"] {
+	position: relative;
+	margin-bottom: 1em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+.flow > [class*="flow"] *:first-child {
+	margin-top: 0;
+}
+
+@media screen and (min-width: 769px) {
+	.flow > .flow-half {width: 50%;}
+	.flow > .flow-push {margin-left: 50%;width: 50%;}
+	.flow >	.flow-full {width: 100%;}
+}
+
+
+
+/*section------------------------------------------------*/
+
+.section-inverse {
+	color: white;
+	background-color: black;
+}
+
+
+
+/*project promos-----------------------------------------*/
+
+.flow.project-list {
+	padding: 0;
+}
+
+@media screen and (min-width: 1016px) {
+	.project-list {
+		width: 62rem;
+	}
+	.flow > .flow-project { /*thirds layout*/
+		margin-left: 0;
+		margin-bottom: 0;
+		padding: 0;
+		width: 33.33%;
+	}
+	.project-inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: 0;
+	}
+	a.project {
+		padding-bottom: 75%;
+	}
+	a.project:hover p {
+		display: none;
+	}
+	a.project:hover .project-inner {
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+		bottom: auto;
+		padding: 0.5em;
+	}	
+	.flow-project:nth-child(3) .project,
+	.flow-project:nth-child(4) .project,
+	.flow-project:nth-child(8) .project {
+		color: white;
+		background: black;
+	}
+}
+
+.project {
+	color: black;
+	background: white;
+}
+
+.project-inverse {
+	color: white;
+	background: black;
+}
+
+a.project {
+	display: block;
+	position: relative;
+	outline: 1px solid rgba(0,0,0,0.2);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.project-inner {
+	padding: 0.5rem;
+	background-color: inherit;	
+}
+
+
+
+
+
+/*temp---------------------------------------------------*/
+
+
+
+</style>
+</head>
+<body>
+
+
+<section>
+	<img src="assets/images/home-illus.svg" alt="">
+</section>
+
+
+
+<h1 class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h1>
+	
+<h2 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+	
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil explicabo consequuntur sunt! Optio accusantium debitis et animi sed, aliquid, id eligendi facilis, maiores rerum deleniti. Saepe ea quae officiis aut.</p>	
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, nobis! Minima voluptatum accusantium blanditiis quas, debitis ipsum dignissimos molestiae eveniet? Facere dignissimos labore earum voluptatem sunt ut, maxime perferendis libero!</p>
+
+<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+
+
+<p class="caption">
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis voluptas nisi dolorum, numquam optio fuga reprehenderit quasi et velit, adipisci id quidem rerum natus excepturi. Rem porro, iure natus culpa.
+</p>
+		
+		
+<div class="flow project-list">
+	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+	<div href="#" class="flow-project">
+		<a class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+	<div class="flow-project">
+		<a href="#" class="project" style="background-image: url(assets/images/fpo-project-promo.jpg)">
+			<div class="project-inner">
+				<p>IDV</p>
+				<h3>Breathing Injustice</h3>
+				<p>Exploring Asthma as a Collective Illness Expereince</p>
+			</div>
+		</a>			
+	</div>
+</div>		
+
+		
+<footer>
+	<p>&copy;2020 CAMD Northeastern University</p>
+</footer>
+			
+				
+</body>
+</html>
