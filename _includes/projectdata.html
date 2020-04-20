@@ -1,0 +1,13 @@
+<!--begin projectdata include-->
+<p>
+{% if page.designer != nil %}
+	<b>Designer:</b> {{ page.designer }}<br>
+{% endif %}
+{% if page.keywords != nil %}
+	<b>Keywords:</b> {{ page.keywords }}<br>
+{% endif %}
+{% if page.extlinktitle != nil and page.extlinkurl != nil %}
+<b>Extended Materials:</b> <a href="{{ page.extlinkurl }}">{{ page.extlinktitle }}</a><br>
+{% endif %}
+</p>
+<!--end projectdata include-->

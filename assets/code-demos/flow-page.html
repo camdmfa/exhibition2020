@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	margin-bottom: 3em;
+}
+
+p {
+	line-height: 1.4em;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.flow {
+	margin: 0 auto;
+	padding: 0.5em;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1080px;
+}
+
+.flow > [class*="flow"] {
+	position: relative;
+	margin-bottom: 1em;
+	padding: 0.5em;
+	width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+	.flow > .flow-half {width: 50%;}
+	.flow > .flow-push {margin-left: 50%;width: 50%;}
+	.flow >	.flow-full {width: 100%;}
+}
+
+/*annotation -----*/
+
+.flow > [class*="flow"]::before {
+	display: block;
+	content: attr(class);
+	padding: 0.25em 0.5em;
+	position: absolute;
+	top: 1em;
+	right: 1em;
+	color: white;
+	background: rgba(255,0,0,0.8);
+	font-size: 0.75em;
+	text-transform: uppercase;
+}
+
+.flow > [class*="flow"]::after {
+	display: block;
+	content: '';
+	position: absolute;
+	border: 1px dotted red;
+	top: 0.5em;
+	right: 0.5em;
+	bottom: 0.5em;
+	left: 0.5em;
+}
+
+
+.big {
+	font-size: 6em;
+	font-weight: bold;
+	color: blue;
+}
+
+
+
+</style>
+</head>
+<body>
+
+
+<div class="flow">
+	<div class="flow-full">
+		<h1>Flow-full column</h1>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+	<div class="flow-half">
+		<h4>Flow-half column</h4>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+	<div class="flow-half">
+		<h4>Flow-half column</h4>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+	<div class="flow-push">
+		<h3>Flow-half, pushed column</h3>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+	<div class="flow-full">
+		<h3>Flow-full column</h3>
+		<p>Lorem ipsum dolor sit amet.</p>
+	</div>
+</div>
+
+
+
+
+<hr>
+
+<div class="flow">
+	<div class="flow-full">
+		<img src="https://placekitten.com/600/300" alt="placeholder">	
+	</div>
+	<div class="flow-full">
+		<h1>Project Title</h1>
+		<p>Byline</p>
+	</div>
+	<div class="flow-push">
+		<h1>Heading</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.</p>
+	</div>
+	<div class="flow-half">
+		<img src="https://placekitten.com/600/600" alt="placeholder">	
+	</div>
+	<div class="flow-half">
+		<img src="https://placekitten.com/600/400" alt="placeholder">	
+	</div>
+	<div class="flow-half">
+		<div style="padding:41.63% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/37328349?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+	</div>
+	<div class="flow-half">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis corporis molestiae quia, iure quis. Reiciendis iure, soluta dolores ratione neque nobis, similique vitae corporis, perferendis est, ipsam accusamus error sit.
+	</div>
+	<div class="flow-half">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 2661.718 1319.416" enable-background="new 0 0 2661.718 1319.416" xml:space="preserve">
+		<g>
+			<path d="M2329.294,729.162c-103.306,6.42-241.946,36.027-320.203,44.052c-150.534,15.439-207.319-90.764-356.304-35.081
+				C1464.541,808.49,1427.3,848.006,1258.674,878.33c-108.116,19.444-216.182,36.302-334.238,40.177
+				c-52.45,1.722-140.503,64.505-181.328,95.082c-43.072,32.26-83.107,64.94-149.143,75.031c-53.939,8.243-152.569,5.97-202.868-1.574
+				c-9.356-1.403-13.849,4.183-18.396,9.634c-126.737,151.889-123.387,169.206-156.472,185.251
+				c-37.131,18.007-68.428-15.666-55.718-48.536c27.268-70.523,136.833-182.689,142.636-189.208c4.4-4.943-0.166-12.001-6.991-8.712
+				c-185.477,89.399-204.598,99.936-230.6,90.07c-14.554-5.522-15.935-21.709-14.012-35.943c6.769-50.085,55.993-46.625,113.58-78.173
+				c34.564-18.935,127.241-107.722,190.099-118.158c26.104-4.334,40.619-3.76,62.432-29.978
+				c36.507-43.879,76.094-133.18,150.564-176.269c64.556-37.353,62.323-38.163,80.173-47.222c3.69-1.873,5.205-5.478,3.018-9.761
+				c-26.165-51.221,10.38-95.728,4.752-213.666c-1.974-41.362-4.454-86.581-47.197-85.479c-19.673,0.507-33.346,10.425-42.776,27.436
+				c-51.936,93.684-28.407,203.088-34.888,252.02c-4.274,32.266-26.026,54.366-42.824,31.55
+				c-14.538-19.745-31.998-66.27-36.004-81.124c-18.84-69.862,5.963-220.824,80.135-272.047
+				c139.361-96.243,249.964-43.334,234.123,182.552c-3.768,53.732-13.368,70.717-11.717,97.242
+				c2.977,47.817,146.388-13.024,525.943-87.743c118.193-23.267,101.736-9.026,219.528-36.4c6.888-1.601,11.281-6.72,14.477-12.672
+				c36.904-68.744,103.357-80.945,154.296-106.749c55.598-28.163,94.058-76.304,146.108-123.919
+				c61.653-56.4,69.149-62.692,71.965-110.093c1.012-17.028,4.135-33.55,11.206-49.156c3.609-7.966,10.69-10.642,18.753-7.327
+				c37.941,15.601,40.033,50.612,75.858,91.92c30.003,34.596,67.158,39.722,90.045,49.257c103.912,43.29,30.935,85.026,89.526,128.017
+				c16.44,12.062,27.017,20.613,17.757,38.556c-11.014,21.342-50.425,55.035-82.828,59.833
+				c-34.219,5.067-68.885-15.757-126.883,25.325c-9.979,7.068-20.572,16.031-12.498,25.266
+				c34.606,39.582,38.931,89.073,104.855,77.133c57.188-10.357,41.37-8.698,83.884-17.52c63.443-13.165,137.232-11.583,191.787-24.434
+				c63.823-15.034,112.475-58.824,154.709-53.93c18.467,2.14,34.365,10.405,43.003,26.567c10.5,19.647,8.328,38.738-17.71,51.691
+				c-58.021,28.863-64.413,8.628-263.209,69.784c-78.717,24.215-76.74,24.842-76.325,29.702c0.458,5.368,2.64,4.717,37.339,9.345
+				c70.014,9.339,203.738,21.735,270.929,7.229c36.872-7.96,80.271-17.144,104.373,12.31c13.236,16.175,22.38,71.231-47.926,82.675
+				C2492.863,733.139,2423.806,723.289,2329.294,729.162z"/>
+		</g>
+		</svg>
+	</div>
+	<div class="flow-full">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit suscipit quam, accusantium deleniti nobis doloribus? Similique distinctio dolores fugiat ullam modi aliquid architecto sint totam vitae animi iure nulla, molestiae.</p>
+	</div>
+</div>
+
+
+
+		
+		
+
+		
+				
+</body>
+</html>

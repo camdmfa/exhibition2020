@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+.i {
+	width: 100%;
+	height: 100vh;
+	background: #eee;
+	position: relative;
+}
+
+.o {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 700px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: pink;
+  transform: translate(-350px, -100px) rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+	transform-origin: 50% 0%;
+}
+
+.o .t {
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 100px;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="i">
+	
+	<div class="o"><div class="t">UNFOLDING</div></div>
+	
+</div>
+
+	
+</body>
+</html>

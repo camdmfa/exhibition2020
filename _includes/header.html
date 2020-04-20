@@ -1,14 +1,30 @@
-<!doctype html>
-<html>
-<style></style>
+<!--begin header include-->
+<!DOCTYPE html>
+<html lang="en" class="has-navbar-fixed-top">
 <head>
-<meta charset="utf-8">
-<title>{{ page.title }}</title>
+<meta charset="UTF-8">
+<title>{{ page.title }} — UNFOLDING: 2020 MFA Thesis Show</title>
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/bulma.min.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
 </head>
-<body>
-
-<ul class="nav">
-  <li><a href="{{ site.baseurl }}/">Home</a></li>
-  <li><a href="{{ site.baseurl }}/about">About</a></li>
-</ul>
+<body class="{{page.bodyclass}}">
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="{{ site.baseurl }}">
+      <img src="{{ site.baseurl }}/assets/images/logo.svg" alt="">
+    </a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div id="navMenu" class="navbar-menu">
+    <div class="navbar-end">
+			<a href="{{ site.baseurl }}/" class="navbar-item">Home</a>
+			<a href="{{ site.baseurl }}/about" class="navbar-item">About</a>
+			<a href="{{ site.baseurl }}/behindthescenes" class="navbar-item">Behind the Scenes</a>
+    </div>
+  </div>
+</nav>
+<!--end header include-->
