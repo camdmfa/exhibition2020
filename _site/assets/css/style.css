@@ -149,11 +149,6 @@ img {
 	.flow >	.flow-full {width: 100%;}
 }
 
-@media screen and (min-width: 769px) {
-	.flow .project-meta {order: +1;}
-}
-
-
 
 /*project promos-----------------------------------------*/
 
@@ -224,5 +219,32 @@ a.project {
 	padding: 0.5rem;
 	background-color: inherit;	
 }
+
+
+
+/*image 360 for Yinan -----------------------------------*/
+
+.img360 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+#preload-imgs {
+    display:none;
+}
+
+
+/*debug -------------------------------------------------*/
+
+/*
+.flow [class*="flow"] {
+	background: pink;
+	border: 1px solid red;
+}
+*/
+
+
 
 
