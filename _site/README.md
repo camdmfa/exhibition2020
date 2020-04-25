@@ -1,5 +1,4 @@
 # exhibition2020
-=======
 
 Northeastern University CAMD 2020 MFA Thesis Exhibition Website
 
@@ -8,7 +7,6 @@ https://camdmfa.github.io/exhibition2020/
 Run locally using:
 
 `jekyll serve --baseurl ''`
-=======
 
 
 
@@ -59,4 +57,3 @@ advisor: "Advisor Name"
 </div>
 <!--end flow-->
 ```
->>>>>>> fac2b6883729b5b7b9d0145129f03aeea6e177c0
