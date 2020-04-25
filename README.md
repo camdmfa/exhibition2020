@@ -32,6 +32,7 @@ heroimage: "fpo-project-promo.jpg"
 keywords: "lorem, ipsum, dolor"
 extlinktitle: "link title"
 extlinkurl: "http://google.com"
+advisor: "Advisor Name"
 
 ---
 
