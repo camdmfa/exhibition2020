@@ -1,13 +1,33 @@
 <!--begin projectdata include-->
 <p>
+
 {% if page.designer != nil %}
-	<b>Designer:</b> {{ page.designer }}<br>
+<b>Designer:</b>
+<ul>
+		<li>
+		{{ page.designer }}<br>
+		</li>
+</ul>
 {% endif %}
+
 {% if page.keywords != nil %}
-	<b>Keywords:</b> {{ page.keywords }}<br>
+<b>Keywords:</b>
+<ul>
+		<li>
+		{{ page.keywords }}<br>
+		</li>
+</ul>
 {% endif %}
+
 {% if page.extlinktitle != nil and page.extlinkurl != nil %}
-<b>Extended Materials:</b> <a href="{{ page.extlinkurl }}">{{ page.extlinktitle }}</a><br>
+<b>Extended Materials:</b>
+<ul>
+		<li>
+			<a href="{{ page.extlinkurl }}">
+			{{ page.extlinktitle }}</a><br>
+		</li>
+</ul>
 {% endif %}
+
 </p>
 <!--end projectdata include-->
