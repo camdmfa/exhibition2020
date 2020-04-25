@@ -9,4 +9,6 @@
 * convert meta to a table
 * add advisor to meta table
 * need smaller images from Yinan
+* Home page with title
+* Home show hero first
 

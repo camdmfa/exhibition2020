@@ -16,19 +16,21 @@
 <section class="hero" style="margin: 4em 0;">
 	<div class="hero-body">
 		<div class="flow project-list">
-		
 		{% for project in site.projects %}
-			<div class="flow-project">
-				<a href="{{ site.baseurl }}{{ project.url }}" class="project" style="background-image: url(assets/images/{{ project.heroimage }})">
-					<div class="project-inner">
-						<p>{{ project.program }}</p>
-						<h3>{{ project.title }}</h3>
-						<p>{{ project.subtitle }}</p>
+			<a class="flow-project" href="{{ site.baseurl }}{{ project.url }}">
+				<div class="project-header">
+					{{ project.program }}<br>
+					{{ project.designer }}
+				</div>
+				<div class="project-body">
+					<div class="project-title">
+						<h2>{{ project.title }}<h2>
+						<h3>{{ project.subtitle }}</h3>
 					</div>
-				</a>			
-			</div>
+					<img src="{{ site.baseurl }}/assets/images/{{ project.heroimage }}" alt="">
+				</div>
+			</a>
 		{% endfor %}
-			
 	</div>		
 </section>
 {% include footer.html %}
