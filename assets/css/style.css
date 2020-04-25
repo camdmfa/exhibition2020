@@ -152,74 +152,84 @@ img {
 
 /*project promos-----------------------------------------*/
 
+
 .flow.project-list {
 	padding: 0;
+}
+
+a.flow-project {
+	display: block;
+	width: 33.33%;
+	margin: 0 0 0 2rem 0; 
+	padding: 0.5em;
+	color: black;
+	background-color: white;
+}
+
+a.flow-project:hover {
+	color: white;
+	background-color: black;
+}
+
+.project-header {
+	padding: 0 0 0.5em 0;
+}
+
+.project-body {
+	color: inherit;
+	background-color: inherit;
+}
+
+.project-body .project-title {
+	padding: 0.5em 0 0 0;
+	color: inherit;
+	background-color: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.project-body .project-title {
+	display: none;
+}
+
+.project-body .project-title h2 {
+	margin: 0 0 0.5rem 0;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.project-body .project-title h3 {
+	margin: 0;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+
+.flow-project:hover .project-body .project-title {
+	display: block;
+}
+
+.project-body {
+	position: relative;
+}
+
+.project-body img {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 @media screen and (min-width: 1016px) {
 	.project-list {
 		width: 62rem;
 	}
-	.flow > .flow-project { /*thirds layout*/
-		margin-left: 0;
-		margin-bottom: 0;
-		padding: 0;
+	.flow > .flow-project {
 		width: 33.33%;
 	}
-	.project-inner {
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: 0;
-	}
-	a.project {
-		padding-bottom: 75%;
-	}
-	a.project:hover p {
-		display: none;
-	}
-	a.project:hover .project-inner {
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		bottom: auto;
-		padding: 0.5em;
-	}	
-	.flow-project:nth-child(3) .project,
-	.flow-project:nth-child(4) .project,
-	.flow-project:nth-child(8) .project {
-		color: white;
-		background: black;
-	}
 }
-
-.project {
-	color: black;
-	background: white;
-	padding-bottom: 50%;
-}
-
-.project-inverse {
-	color: white;
-	background: black;
-}
-
-a.project {
-	display: block;
-	position: relative;
-/*	outline: 1px solid rgba(0,0,0,0.2);*/
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-.project-inner {
-	padding: 0.5rem;
-	background-color: inherit;	
-}
-
 
 
 /*image 360 for Yinan -----------------------------------*/
