@@ -3,30 +3,23 @@
 
 {% if page.designer != nil %}
 <b>Designer:</b>
-<ul>
-		<li>
-		{{ page.designer }}<br>
-		</li>
-</ul>
+{{ page.designer }}<br>
+{% endif %}
+
+{% if page.advisor != nil %}
+<b>Advisor:</b>
+{{ page.advisor }}<br>
 {% endif %}
 
 {% if page.keywords != nil %}
-<b>Keywords:</b>
-<ul>
-		<li>
-		{{ page.keywords }}<br>
-		</li>
-</ul>
+<b>Keywords:</b>{{ page.keywords }}
+<br>
 {% endif %}
 
 {% if page.extlinktitle != nil and page.extlinkurl != nil %}
 <b>Extended Materials:</b>
-<ul>
-		<li>
-			<a href="{{ page.extlinkurl }}">
-			{{ page.extlinktitle }}</a><br>
-		</li>
-</ul>
+<a href="{{ page.extlinkurl }}">
+{{ page.extlinktitle }}</a><br>
 {% endif %}
 
 </p>

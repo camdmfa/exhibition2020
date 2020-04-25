@@ -140,14 +140,16 @@ figcaption {
   height: 100%;
 }
 
-ul {
-	  list-style: none;
-	  padding-left: 0;
+.newTag {
+	list-style: none;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
 }
 
-/* .tags li {
+.newTag li {
   float: left;
-} */
+}
 
 /*flow layout--------------------------------------------*/
 
