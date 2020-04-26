@@ -105,6 +105,14 @@ p {
 	line-height: 1.333em;
 }
 
+.sample_text {
+  margin: 3px 0 0 0;
+  font-size: 0.8em;
+  /* font-family: Avenir; */
+  font-weight: bold;
+  line-height: 1.4;
+}
+
 a {
 	color: black;
 }
