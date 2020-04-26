@@ -24,41 +24,27 @@ advisor: "Kristian Kloeckl"
 		{% include projectdata.html %}
 	</div>
 	<div class="flow-full">
-		<h2>The Origin to Destination Flow</h2>
+		<h2>The Mobility Pattern of Boston Employees</h2>
 	</div>
-	<div class="flow-full">
+
+	<div class="flow-half">
+		<p>Boston is the capital city of Massachusetts and the region's central hub, located in Suffolk County. The right-side flow map describes the overall mobility pattern of all employees in Suffolk. It shows the highest concentration of employment were Boston and the nearby towns, as the hotspot area in Massachusetts.</p>
+		<p>This visualization only can show the overall pattern and give a sense of the total volume of flows. But it has so many visual clusters of flows, lost is the individual trip view and the passthrough of the flow. One solution is that with a more granular mapping, it represents the flow variation in different, multi-dimensional geographic levels and more spatial references to reality.</p>
 		<img src="{{ site.baseurl }}/assets/images/yinan/framework.jpg" alt="the framework">
 	</div>
 	<div class="flow-half">
-		<p>Many works show a total value of flows with its geolocations. Those visualizations lost the individual trip view and others information by aggregating the data.</p>
-		<p>Being able to see a more granular geographic pattern of the O-D flow could reveal layers of information and the intermediate steps of it, which is essential to describing this O-D pattern. With a more granular map visualization, it could show the flow variation within different geographic levels and more details of spatial references. That means the data within its geolocation could be more understood and accepted by people, its definition in reality. Also, increased granularity is more interesting to view and explore unknown patterns.</p>
-		<p>&nbsp;</p>
-	</div>
-	<div class="flow-half">
-		<p><i>The multi-dimensional data structure</i></p>
-		<ul>
-        <li>As origins</li>
-        <li>As Destinations</li>
-        <li>The volumes of flow</li>
-        <li>The flow direction</li>
-    </ul>		
-	</div>
-    <div class="flow-full">
-    <h2>The Mobility of All Boston Employees</h2>	
-    </div>
-	<div class="flow-half">
-		<p>Boston is the capital city of Massachusetts and the region's central hub, located in Suffolk County. It has the highest concentration of employment, which also affects the nearby towns and counties as the hotspot area. The right side flow map visualized the overall pattern of all employees in Suffolk. We can see that most employees were concentrated in the Boston area. On a larger scale, many activities occurred in Middlesex and Suffolk counties.</p>
-    </div>
-    <div class="flow-half">
 		<img src="{{ site.baseurl }}/assets/images/yinan/Overview.jpg" alt="Overview of Suffolk Employees">
-		<p>Data Source: 2015 LEHD Cencus Data</p>
+		<figcaption>Data Source: 2015 LEHD Cencus Data</figcaption>
 	</div>
 	<div class="flow-full">
-		<h2>The Physical Map Visualization</h2>
+		<h2>A Physical Map Visualization</h2>
 	</div>
 	<div class="flow-half">
-		<p>How to perceive the number of 1 million people working in Suffolk? </p>
-		<p>This physical installation consisted of six map layers. These layers were laser cut on clear acrylic panels. It framed the concept that the abstract data can become more connected to people’s perception of a place with a granular map scale. Because it has more spatial references relating to people's daily living and working environment.</p>
+		<p><b>How to map 1 million flows from work to home in Suffolk?</b></p>
+		<p>This physical visualization maps the mobility pattern of all Boston employees, working and home distribution in different layers. It discusses a visualization approach for the Origin to Destination data – mapping with a 3D tree-node diagram, which has a similar function to the Sankey Arcs diagram. The line connects the origin and destinations, also the flow evolution changes across different geographic regions.</p>
+	</div>
+	<div class="flow-half">
+	<p>It intends to frame the concept that mapping with more granularities, the multi-dimensional flow could be revealed with more layers and patterns. Also, the more granular geographic features can connect to people's perception of place in reality, to understand the abstract data.</p>
 	</div>
 	<div class="flow-full">
 	  <div class="container">
@@ -71,71 +57,78 @@ advisor: "Kristian Kloeckl"
          <center><b>Swipe or Click and Drag to Rotate</b></center>
        </div>
        <div id="preload-imgs"></div>
-		 <p>Data Source: 2015 LEHD Cencus Data</p>
-         <p>Drag to see the flow of all Boston Employees from home to workplace distribution. The front view shows the overall Massachusetts map where all Suffolk employees lived. Following the red thread through each layer, you can see Boston employees' workplace distributed in different neighborhoods and geo block-groups. The rear view shows the path of the individual flow: the most concentrated work block-group is in Downtown and where those people lived in Boston.</p>
+			 <figcaption>Data Source: 2015 LEHD Cencus Data</figcaption>
     </div>
 	</div>
-
 	<div class="flow-half">
-		<h3>The Map Layers</h3>
-		<p>This physical visualization draws the mobility pattern of all Boston employees. These granular map layers reveal the phenomena behind the number that connect with people's perception of Boston in reality, not just as an aggregated value. Boston has the most concentration of employees in Suffolk County. The densest of all working area in Boston is Downtown. Within Downtown the busiest hotspot are the large corporate offices and high building there.</p>
-		<p><b>As the Origin:</b> 1,050,246 employees living in Massachusetts</p>
+	<p>Drag to see flows of all workers from home to workplace distribution. The red thread connects workplaces and homeplaces. The circle size index the volume of the flow.</p>
+	</div>
+	<div class="flow-half">
+	 <p>The front view shows the overall map where all Suffolk employees lived in Massachusetts' county. Following the red thread through each layer, you can see Boston employees' workplace distributed in different neighborhoods and geo block-groups. The rearview shows the path of an individual flow: the most concentrated work block-group is in Downtown and where those people lived in Boston.</p>
+	</div>
+	<div class="flow-full">
+	<h2>The Map Layers</h2>
+	</div>
+	<div class="flow-half">
+		<p>Seeing through these map layers, the flow patterns reveal the phenomena behind the number of 1 million workers. Boston has the most concentration of employees in Suffolk County. The densest of all working areas in Boston is Downtown. Within Downtown, the busiest hotspot is the large corporate offices and high building there.</p>
+		<p>This physical visualization consists of six map layers. Layers were laser cut on clear acrylic panels. Then threaded the line and installed them at home during the COVID-19 period. However, it has a craft making process in this data visualization piece. It contains some aesthetics and human experiences on making and materials, also experiencing the data, which can’t be replaced by the digital version.</p>
+		<p><b>As the Origin:</b> 1,050,246 Suffolk employees living in Massachusetts</p>
 		<p><b>As Destinations:</b> Where they worked in Suffolk</p>
 	</div>
 	<div class="flow-half">
 		<img src="{{ site.baseurl }}/assets/images/yinan/map_layers.jpg" alt="map layers">
 	</div>
 	<div class="flow-half">
-		 <p><i>The red thread indexes the Origin to Destination flow</i></p>
+		 <p><i>The <b>red thread</b> indexes the Origin to Destination flow</i></p>
 		<img src="{{ site.baseurl }}/assets/images/yinan/P1.jpg" alt="map layers">
-		<h4>The First Layer&mdash;As Origins </h4>
+		<p><b>The First Layer — As Origins</b></p>
 		<p>Massachusetts Map with Counties</p>
 		<p>Most Employees live in Essex, Middlesex, Suffolk, Norfolk, Bristol and Plymouth.</p>
 	</div>
 	<div class="flow-half">
-	    <p><i>The circle size indexes the volume of the flow</i></p>
+	    <p><i>The <b>circle size</b> indexes the volume of the flow</i></p>
 		<img src="{{ site.baseurl }}/assets/images/yinan/P2.jpg" alt="map layers">
-		<h4>The Second Layer&mdash;The total volume of the flow </h4>
+		<p><b>The Second Layer — The total volume of the flow</b></p>
 		<p>1,050,246</p>
 		<p>The total number of Employees in Suffolk County</p>
 	</div>
 	<div class="flow-half">
 		<img src="{{ site.baseurl }}/assets/images/yinan/P3.jpg" alt="map layers">
-		<h4>The Third Layer&mdash;As Destinations</h4>
+		<p><b>The Third Layer — As Destinations</b></p>
 		<p>Suffolk County Map with Towns</p>
 		<p>Most employees worked in Boston than in Chelsea, Winthrop, and Revere.</p>
 	</div>
 	<div class="flow-half">
 		<img src="{{ site.baseurl }}/assets/images/yinan/P4.jpg" alt="map layers">
-		<h4>The Fourth Layer&mdash;As Destinations</h4>
+		<p><b>The Fourth Layer — As Destinations</b></p>
 		<p>Boston City Map with Neighborhoods</p>
 		<p>Employees' workplace distributed to the 23 neighborhoods of Boston. Majority worked in Downtown, Chinatown, Leather District, Seaport, South End, Back Bay, Longwood.</p>
 	</div>
 	<div class="flow-half">
 		<img src="{{ site.baseurl }}/assets/images/yinan/P5.jpg" alt="map layers">
-		<h4>The Fifth Layer&mdash;As Destinations and an Origin </h4>
+		<p><b>The Fifth Layer — As Destinations and an Origin </b></p>
 		<p>Boston City Map with Geo Block-Groups</p>
 		<p>Most concentrated work neighborhoods distributed into their geo block-group. Among all of them, the densest work block-group was located in Downtown, which is the biggest circle in this map layer. It is the work block-group 250250702025.</p>
 	</div>
 	<div class="flow-half">
 		<img src="{{ site.baseurl }}/assets/images/yinan/P6.jpg" alt="map layers">
-		<h4>The Sixth Layer&mdash;The Individual flow, as Destinations</h4>
+		<p><b>The Sixth Layer — The Individual flow, as Destinations</b></p>
 		<p>Boston City Map with Downtown Block-Group</p>
-		<p>In real environment, The 250250702025 block-group is between Summer Street, Purchase Street, and High Street, where all the tall buildings and big companies located. Companies such as, State Street, Goldman Sachs, and Cambridge Associates. As destinations from that work block-group, What does the employees' home distribution look like in Boston? Seeing through this map layer, many of them were living nearby downtown neighborhoods.</p>
+		<p>In real environment, The 250250702025 block-group is between Summer Street, Purchase Street, and High Street, where all the tall buildings and big companies located. Companies such as, State Street, Goldman Sachs, and Cambridge Associates. As destinations from that work block-group, What does the employees' home distribution look like in Boston? In this map layer, it shows many of them were living nearby downtown neighborhoods.</p>
 	</div>
 	<div class="flow-full">
-	<h2>A Web Application</h2>	
+	<h2>A Web Application</h2>
 	</div>
 	<div class="flow-half">
-	<p>This interactive web application discusses visualization approaches for the origin to destination flow. It can visualize the pattern of all Boston Employee's work and home distribution. This tool will be applied to a practical use, to study the Boston commuters' mobility by the MBTA researchers.</p>
-    <p>The choropleth map describes the workplace distribution in Boston at the geo block-group level while the color saturation changes indexes the volume of flow. It avoids visual cluster on the map by not using arc flow or dots to represents the value.</p>
+	<p>Mapping with more granularity, and the 3D three-node diagram approaches will be implemented to an interactive web application, to visualize the flow pattern of all Boston Employee's work to home. Although, this web application discusses other visualization approaches for Origin-Destination (O-D) flow.</p>
+    <p>The choropleth map describes the workplace distribution in Boston at the geo block-group level while the color saturation changes index the volume of flow. When the user clicks the button "Where People Live" in the right-side search panel, the interface will update to the tree node diagram.</p>
     </div>
     <div class="flow-half">
     <img src="{{ site.baseurl }}/assets/images/yinan/protype1.jpg" alt="protype design">
     </div>
     <div class="flow-half">
-    <p>When the user clicks the button "Where People Live" in the right-side search panel, the interface will update to the tree node diagram. It draws the pattern of homeplace distribution at each geographic level, from state, to county, to towns, and finally geo block-group. Also, each tree node can expand and correspond to its geographic location in the map window, when the user mouse clicks on it.</p>
-    <p>This tree node diagram has a similar function to the Sankey diagram. It shows the intermediate steps and evolution changes among different stages. And it allows visual comparison of the flow value at different geographic levels simultaneously.</p>
+    <p>It draws the pattern of homeplace distribution at each geographic level, from states to counties, to towns, and finally geo block-groups. Also, each tree-node can expand and correspond to its geographic location in the map window, when the user mouse clicks on it. </p>
+    <p>The design for mapping this tree-node diagram to a web version will continue developing, and discussing other visualization approaches in the next step.</p>
     </div>
     <div class="flow-half">
     <img src="{{ site.baseurl }}/assets/images/yinan/protype2.jpg" alt="protype design">
