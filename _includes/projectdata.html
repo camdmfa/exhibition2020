@@ -1,6 +1,5 @@
 <!--begin projectdata include-->
-<p class="newTag">
-
+<p>
 {% if page.designer != nil %}
 <b>Designer: </b>
 {{ page.designer }}<br>
@@ -21,6 +20,31 @@
 <a href="{{ page.extlinkurl }}">
 {{ page.extlinktitle }}</a><br>
 {% endif %}
-
 </p>
+
+
+<!-- <ul style="list-style: none;
+    padding-left:0;">
+
+  {% if page.designer != nil %}
+  <li><b>Designer: </b>{{ page.designer }}<br>
+  </li>
+  {% endif %}
+
+  {% if page.advisor != nil %}
+  <li><b>Keywords: </b>{{ page.keywords }}<br></li>
+  {% endif %}
+
+  {% if page.keywords != nil %}
+  <li><b>Advisor: </b>{{ page.advisor }}<br>
+  </li>
+  {% endif %}
+
+  {% if page.extlinktitle != nil and page.extlinkurl != nil %}
+  <li><b>Extended Materials:</b>
+  <a href="{{ page.extlinkurl }}">
+  {{ page.extlinktitle }}</a><br>
+  </li>
+  {% endif %}
+</ul> -->
 <!--end projectdata include-->

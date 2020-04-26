@@ -168,6 +168,7 @@ figcaption {
 		padding: 0.5em 1.5em;
 	}
 	.flow > .flow-half {width: 50%;}
+	.flow > .flow-three {width: 33.3%;}
 	.flow > .flow-push {margin-left: 50%;width: 50%;}
 	.flow >	.flow-full {width: 100%;}
 }
