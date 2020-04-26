@@ -82,7 +82,7 @@ h1.title {
 }
 
 h2.subtitle {
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
 	font-weight: normal;
 	font-size: 1.875;
 	line-height: 1.1em;
@@ -92,6 +92,10 @@ p {
 	margin-bottom: 1.5rem;
 	font-size: 1em;
 	line-height: 1.5em;
+}
+
+.newTag {
+	line-height: 2em;
 }
 
 .caption {
@@ -119,11 +123,10 @@ img {
 }
 
 figcaption {
-	margin-top: 0.5rem;
+	margin-top: 0.3rem;
 	font-style: italic;
-	font-size: 1em;
-	line-height: 1.5em;
-	margin-bottom: 1.5rem;
+	font-size: 0.8rem;
+	margin-bottom: 1rem;
 }
 
 .videoWrapper {
@@ -146,7 +149,7 @@ figcaption {
 	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
-	max-width: 1200px;
+	max-width: 62rem;
 }
 
 .flow > [class*="flow"] {
