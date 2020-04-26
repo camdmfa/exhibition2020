@@ -5,14 +5,14 @@
 {{ page.designer }}<br>
 {% endif %}
 
-{% if page.advisor != nil %}
-<b>Advisor: </b>
-{{ page.advisor }}<br>
-{% endif %}
-
 {% if page.keywords != nil %}
 <b>Keywords: </b>{{ page.keywords }}
 <br>
+{% endif %}
+
+{% if page.advisor != nil %}
+<b>Advisor: </b>
+{{ page.advisor }}<br>
 {% endif %}
 
 {% if page.extlinktitle != nil and page.extlinkurl != nil %}
