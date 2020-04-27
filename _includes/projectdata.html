@@ -1,50 +1,28 @@
 <!--begin projectdata include-->
-<p>
+<table class="meta">
 {% if page.designer != nil %}
-<b>Designer: </b>
-{{ page.designer }}<br>
+	<tr>
+		<th>Designer</th>
+		<td>{{ page.designer }}</td>
+	</tr>
 {% endif %}
-
 {% if page.keywords != nil %}
-<b>Keywords: </b>{{ page.keywords }}
-<br>
+	<tr>
+		<th>Keywords</th>
+		<td>{{ page.keywords }}</td>
+	</tr>
 {% endif %}
-
 {% if page.advisor != nil %}
-<b>Advisor: </b>
-{{ page.advisor }}<br>
+	<tr>
+		<th>Advisor</th>
+		<td>{{ page.advisor }}</td>
+	</tr>
 {% endif %}
-
 {% if page.extlinktitle != nil and page.extlinkurl != nil %}
-<b>Extended Materials:</b>
-<a href="{{ page.extlinkurl }}">
-{{ page.extlinktitle }}</a><br>
+	<tr>
+		<th>More Info</th>
+		<td><a href="{{ page.extlinkurl }}">{{ page.extlinktitle }}</a></td>
+	</tr>
 {% endif %}
-</p>
-
-
-<!-- <ul style="list-style: none;
-    padding-left:0;">
-
-  {% if page.designer != nil %}
-  <li><b>Designer: </b>{{ page.designer }}<br>
-  </li>
-  {% endif %}
-
-  {% if page.advisor != nil %}
-  <li><b>Keywords: </b>{{ page.keywords }}<br></li>
-  {% endif %}
-
-  {% if page.keywords != nil %}
-  <li><b>Advisor: </b>{{ page.advisor }}<br>
-  </li>
-  {% endif %}
-
-  {% if page.extlinktitle != nil and page.extlinkurl != nil %}
-  <li><b>Extended Materials:</b>
-  <a href="{{ page.extlinkurl }}">
-  {{ page.extlinktitle }}</a><br>
-  </li>
-  {% endif %}
-</ul> -->
+</table>
 <!--end projectdata include-->

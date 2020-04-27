@@ -57,3 +57,8 @@ advisor: "Advisor Name"
 </div>
 <!--end flow-->
 ```
+
+### Media
+
+Use [this service](https://embedresponsively.com/) to generate responsive embed code for videos. 
+
