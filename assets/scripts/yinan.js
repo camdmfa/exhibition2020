@@ -1,6 +1,6 @@
 $(function() {
 
-            var num = 36; // the total number of images 
+            var num = 36; // the total number of images
 
             // Preload all the images into hidden div
             for (var i=1 ; i<=num ; i++) {
@@ -13,14 +13,14 @@ $(function() {
             // http://labs.rampinteractive.co.uk/touchSwipe/
             var swipeOptions=
             {
-                triggerOnTouchEnd : true,   
+                triggerOnTouchEnd : true,
                 swipeStatus : swipeStatus,
                 allowPageScroll:"vertical",
-                threshold:75            
+                threshold:75
             }
 
             $(function()
-            {               
+            {
                 imgs = $(".img-container"); // the element that will be swipeable
                 imgs.swipe( swipeOptions );
             });
@@ -38,8 +38,8 @@ $(function() {
             function changeImg (imgNum) {
 
                 // spread it out so it doesn't load new img every single px of swipe distance
-                imgNum = Math.floor(imgNum/8); 
-                
+                imgNum = Math.floor(imgNum/24);
+
                 if (imgNum < 1) {
                     imgNum += num;
                 }
@@ -51,15 +51,15 @@ $(function() {
 								if (imgNum > 0 && imgNum < num) {
                 	document.getElementById("myImg").src="../assets/images/yinan/360/i_("+imgNum+").jpg";
 								}
-                
+
             }
 
             function changeImgR (imgNum) {
 
                 // spread it out so it doesn't load new img every single px of swipe distance
-                imgNum = Math.floor(imgNum/8); 
+                imgNum = Math.floor(imgNum/24);
 
-                var num2 = -Math.abs(num); 
+                var num2 = -Math.abs(num);
                 if (imgNum > num2) {
                     imgNum += num;
                 }
@@ -71,6 +71,6 @@ $(function() {
 								if (imgNum > 0 && imgNum < num) {
                 	document.getElementById("myImg").src="../assets/images/yinan/360/i_("+imgNum+").jpg";
 								}
-                
+
             }
         })
