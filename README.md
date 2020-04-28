@@ -2,7 +2,13 @@
 
 Northeastern University CAMD 2020 MFA Thesis Exhibition Website
 
+Development: 
+
 https://camdmfa.github.io/exhibition2020/
+
+Production:
+
+https://web.northeastern.edu/mfashow/
 
 Run locally using:
 
