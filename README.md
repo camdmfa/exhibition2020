@@ -2,7 +2,13 @@
 
 Northeastern University CAMD 2020 MFA Thesis Exhibition Website
 
+Development: 
+
 https://camdmfa.github.io/exhibition2020/
+
+Production:
+
+https://web.northeastern.edu/mfashow/
 
 Run locally using:
 
@@ -61,4 +67,15 @@ advisor: "Advisor Name"
 ### Media
 
 Use [this service](https://embedresponsively.com/) to generate responsive embed code for videos. 
+
+
+### Deployment
+
+Before copying files to the production server you need to build the project with the correct directory path:
+
+`jekyll serve --baseurl '/mfashow'`
+
+Then move to the `_sites` directory: `cd _sites`
+
+Using sftp, copy the files: `sftp: put -r .`
 
